@@ -29,6 +29,7 @@ Amber::Server.configure do
 
   routes :web do
     get "/", HomeController, :index
+    resources "pets", PetController
   end
 
   routes :api do
